@@ -1,0 +1,18 @@
+opam-version: "2.0"
+name: "string_metrics"
+version: "0.1.0"
+author: "markkarpov92@gmail.com"
+maintainer: "markkarpov92@gmail.com"
+synopsis: "Collection of string metric algorithms"
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name "-j" jobs] {with-test}
+]
+depends: [
+  "dune" {build}
+  "alcotest" {with-test}
+]
+tags: [ "string-metrics" "levenshtein" "hamming" "jaro" "jaro-winkler" "jaccard-similarity" "edit" "distance"]
+homepage: "https://github.com/mrkkrp/string_metrics"
+dev-repo: "git://github.com/mrkkrp/string_metrics"
+bug-reports: "https://github.com/mrkkrp/string_metrics/issues"

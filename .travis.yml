@@ -9,12 +9,10 @@ services:
 
 env:
   global:
-    - PINS="string-metrics:."
+    - PINS="string_metrics:."
     - DISTRO="ubuntu-16.04"
   matrix:
-    - PACKAGE="string-metrics" OCAML_VERSION="4.03"
-    - PACKAGE="string-metrics" OCAML_VERSION="4.06"
-    - PACKAGE="string-metrics" OCAML_VERSION="4.07"
+    - PACKAGE="string_metrics" OCAML_VERSION="4.07"
 
 notifications:
   email: false

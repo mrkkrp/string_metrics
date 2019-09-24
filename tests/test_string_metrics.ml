@@ -1,5 +1,5 @@
 let test_x () =
-  Alcotest.(check int) "x is 5" String_metrics.magic_x 4
+  Alcotest.(check int) "x is 5" String_metrics.magic_x 5
 
 let () =
   Alcotest.run "string_metrics"
