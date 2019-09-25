@@ -11,6 +11,7 @@ build: [
 depends: [
   "dune" {build}
   "alcotest" {with-test}
+  "crowbar" {with-test}
 ]
 tags: [ "string-metrics" "levenshtein" "hamming" "jaro" "jaro-winkler" "jaccard-similarity" "edit" "distance"]
 homepage: "https://github.com/mrkkrp/string_metrics"

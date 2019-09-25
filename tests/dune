@@ -1,3 +1,9 @@
 (test
  (name test_string_metrics)
+ (modules test_string_metrics)
  (libraries alcotest string_metrics))
+
+(test
+ (name test_string_metrics_gen)
+ (modules test_string_metrics_gen)
+ (libraries crowbar string_metrics))
